@@ -26,7 +26,7 @@ class AuthTest {
         $("[data-test-id= login]").$("[class= input__control]").setValue(registeredUser.getLogin());
         $("[data-test-id= password]").$("[class= input__control]").setValue(registeredUser.getPassword());
         $$("button").find(exactText("Продолжить")).click();
-        $("[id = root]").shouldHave(exactText("Личный кабинет"));
+        $(".App_appContainer__3jRx1").shouldHave(exactText("Личный кабинет"));
     }
 
     @Test
