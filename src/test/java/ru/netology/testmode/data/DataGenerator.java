@@ -12,8 +12,6 @@ import java.util.Locale;
 
 import static io.restassured.RestAssured.given;
 
-@Data
-
 public class DataGenerator {
     private static final RequestSpecification requestSpec = new RequestSpecBuilder()
             .setBaseUri("http://localhost")
